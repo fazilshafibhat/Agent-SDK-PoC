@@ -1,10 +1,12 @@
 {
   "name": "agent-sdk-poc",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000A\u0000g\u0000e\u0000n\u0000t\u0000-\u0000S\u0000D\u0000K\u0000-\u0000P\u0000o\u0000C\u0000\r\u0000 \u0000",
-  "main": "index.js",
+  "description": "Agent SDK PoC",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node --env-file=.env dist/index.js",
+    "dev": "tsc && node --env-file=.env dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,9 @@
   "devDependencies": {
     "@types/node": "^26.6.6",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "axios": "^1.21.1",
+    "openai": "^7.57.0"
   }
 }
