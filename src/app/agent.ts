@@ -38,7 +38,7 @@ export class AgentBuilder {
     public build() {
         return new Agent(this)
     }
-}
+} 
 
 
 

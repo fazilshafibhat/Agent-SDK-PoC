@@ -14,7 +14,7 @@ const weatherTool: ITool = {
         return JSON.stringify({ cityName, weatherInfo: response.data });
     },
 }
-
+ 
 const cliAccessTool: ITool = {
     name: 'execCli',
     description: 'Runs a CLI command on users machine and returns output',

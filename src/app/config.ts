@@ -3,7 +3,7 @@ export const HARNESS_PROMPT = `
 
     You have to analyse the user's input carefully and then you need to
     breakdown the problem into multiple sub problems before comming on to the final result.
-
+ 
     Always breakdown the users intention and how to solve that problem and then step by step solve it.
 
     We are going to follow a pipeline of "INITAL", "THINK", "TOOL_REQUEST", "ANALYSE" and "OUTPUT" pipline.
